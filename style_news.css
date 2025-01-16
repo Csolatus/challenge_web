@@ -1,0 +1,407 @@
+
+
+/* Css du header */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1A;
+    color: white;
+}
+
+header {
+    background-color: #2C2C2C;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 4px;
+    width: 100%;
+}
+
+img {
+    width: 112px;
+}
+
+#toggle-products {
+    background-color: #2c2c2c36;
+    color: white;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-align: center;
+    border-radius: 5px;
+    padding-bottom: 5px;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+div.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-button {
+    display: inline-block;
+    border: none; /* Pas de bordure parce que c'est moche */
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    width: max-content; /* Remplie la ligne en bas jusqu'au mot=*/
+    color: rgb(255, 255, 255);
+    text-decoration: none;/* Enlever le truc sous ligner qui rend moche*/
+    padding: 10px 20px;
+}
+
+.nav-button::after {
+    content: '';
+    background: linear-gradient(to right, red, blue);
+    border-radius: 100px;
+    height: 6px;
+    width: 0;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: width 300ms ease-in-out;
+}
+
+.nav-button:hover::after {
+    width: 100%;
+}
+
+#nav-left {
+    width: auto;
+    height: 30px;
+    object-fit: contain;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+div.nav-right {
+    align-content: center;
+    width: max-content;
+}
+
+.nav-search-bar {
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-products {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-products li {
+    position: relative;
+}
+
+.flex-products li:hover {
+    top: -20px;
+}
+
+/* CSS harmonisé avec style.css */
+.language, .account {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}   
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1A;
+    color: white;
+}
+
+/* En-tête */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1A1A1A;
+    border-bottom: 1px solid #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+.search-bar {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 10px;
+    background-color: #222;
+    color: white;
+}
+
+.search-bar::placeholder {
+    color: #aaa;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+.highlight-articles {
+    display: flex;
+    flex-wrap: wrap; /* Pour rendre responsive */
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 0 2rem; /* Ajoute un padding gauche et droit */
+    box-sizing: border-box; /* Assure que le padding n'affecte pas la largeur */
+}
+
+
+.highlight-articles .article {
+    flex: 1;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: calc(33% - 1rem); /* Ajuster la taille pour 3 articles par ligne */
+}
+
+.highlight-articles .article img {
+    width: 100%;
+    height: 250px; /* Taille modérée des images */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.highlight-articles .article .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    font-size: 1.1rem; /* Texte légèrement réduit */
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.highlight-articles .article:hover {
+    transform: scale(1.03); /* Effet d'agrandissement léger */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Effet d'ombre */
+    background: none; /* Supprime tout fond appliqué au survol */
+}
+
+.highlight-articles .article .text:hover {
+    background: none; /* Supprime le changement de fond au survol */
+}
+
+
+
+
+/* Sous-titre */
+.sub-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrer les liens */
+    gap: 20px; /* Espacement entre les liens */
+}
+
+.sub-link {
+    text-decoration: none;
+    color: white; /* Couleur blanche pour les liens */
+    font-size: 16px; /* Taille légèrement augmentée pour la lisibilité */
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sub-link:hover {
+    background-color: #333333; /* Couleur de fond au survol */
+    color: #cccccc; /* Couleur légèrement grisée au survol */
+}
+
+
+.secondary-articles {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Espacement augmenté entre les articles secondaires */
+    margin-top: 2rem;
+}
+
+.secondary-articles .card {
+    text-align: center;
+    width: 220px; /* Taille uniforme des cartes secondaires */
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.secondary-articles .card:hover {
+    transform: scale(1.05); /* Effet de zoom léger */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-articles .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.secondary-articles .card p {
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.secondary-articles .card:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.more-news {
+    text-align: center;
+    margin: 20px;
+}
+
+.more-news a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.more-news a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #333;
+    color: #777;
+}
+
+
+@media (max-width: 768px) {
+    /* Masquer le contenu principal du footer */
+    .footer-content {
+        display: none;
+    }
+
+    /* Afficher uniquement le texte de copyright */
+    .footer-bottom {
+        display: block;
+    }
+}
+
+/* Section responsive */
+@media (max-width: 768px) {
+    .highlight-articles {
+        flex-direction: column; /* Articles en colonne sur petits écrans */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .highlight-articles .article {
+        max-width: 100%; /* Articles prennent toute la largeur */
+    }
+
+    .sub-header {
+        flex-direction: column; /* Liens sous forme de colonne */
+        gap: 10px;
+    }
+
+    .sub-link {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
