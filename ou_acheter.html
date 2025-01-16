@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Où acheter</title>
+    <link rel="stylesheet" href="styles_ou_acheter.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="ou_acheter.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <input type="image" src="logo-asrock.webp" id="nav-left">
+                <ul class="nav-middle">
+                    <li class="nav-li"><a class="nav-button" href="#" id="products-button">Products</a>                    </li>
+                    <li class="nav-li"><a class="nav-button" href="#" type="button">Informations</a></li>
+                    <li class="nav-li"><a class="nav-button" href="#" type="button">Support</a></li>
+                    <li class="nav-li"><a class="nav-button" href="#" type="button">Ou acheter</a></li>
+                </ul>
+                <div class="nav-right">
+                    <input class="nav-search-bar" type="search"> 
+                    <button id="nav-button-login"><i class="fa-solid fa-right-to-bracket"></i></button>
+                    <button id="nav-button-langue"><i class="fa-solid fa-language"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>   
+    <div id="toggle-products">
+        <div class="flex-products">
+            <li><a href="#"><img class="image" src="menu-MB.png" alt="Carte Mères"><br>Carte Mères</a></li>
+            <li><a href="#"><img class="image" src="menu-GraphicsCard.png" alt="Carte Graphique"><br>Carte Graphique</a></li>
+            <li><a href="#"><img class="image" src="menu-Monitors.png" alt="Gaming Monitor"><br>Gaming Monitor</a></li>
+            <li><a href="#"><img class="image" src="menu-MiniPC.png" alt="Mini PC"><br>Mini PC</a></li>
+            <li><a href="#"><img class="image" src="menu-IPC.png" alt="PCs Industriels"><br>PCs Industriels</a></li>
+            <li><a href="#"><img class="image" src="menu-Server.webp" alt="Serveurs / Station de Travail"><br>Serveurs / Station de Travail</a></li>
+        </div>
+    </div>
+
+    <main>
+        <section class="where-to-buy">
+            <h1>Where to Buy</h1>
+            <label for="country">Choose your country :</label>
+            <select id="country">
+                <option value="france">France</option>
+                <option value="usa">USA</option>
+                <option value="japan">Japan</option>
+            </select>
+        </section>
+
+        <section class="buy-options">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Distributor</th>
+                        <th>E-tailers</th>
+                        <th>Resellers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Distributor 1</td>
+                        <td>E-tailer 1</td>
+                        <td>Reseller 1</td>
+                    </tr>
+                    <tr>
+                        <td>Distributor 2</td>
+                        <td>E-tailer 2</td>
+                        <td>Reseller 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="categories">
+            <h2>Categories</h2>
+            <ul>
+                <li data-category="motherboard">Motherboard</li>
+                <li data-category="monitor">Monitor</li>
+                <li data-category="graphics-card">Graphics Card</li>
+                <li data-category="mini-pc">Mini PC</li>
+                <li data-category="networking">Networking</li>
+            </ul>
+        </section>
+
+        <section class="image-display">
+            <img id="category-image" src="images/motherboard.jpg" alt="Category Image">
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-sections">
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">Company Info</a></li>
+                    <li><a href="#">Investor</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>New</h4>
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Download</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Social Media</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Your Company. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
