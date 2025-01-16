@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASrock</title>
+    <link rel="stylesheet" href="style 2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <input type="image" src="PhotoAccueil/logo-asrock.webp" id="nav-left">
+                <!-- Bouton du menu mobile -->
+
+                <ul class="nav-middle">
+                    <li class="nav-li"><a class="nav-button" href="#" id="products-button">Products</a>                    </li>
+                    <li class="nav-li"><a class="nav-button" href="New/news.html" type="button">Informations</a></li>
+                    <li class="nav-li"><a class="nav-button" href="#" type="button">Support</a></li>
+                    <li class="nav-li"><a class="nav-button" href="#" type="button">Ou acheter</a></li>
+                </ul>
+                <div class="nav-right">
+                    <input class="nav-search-bar" type="search"> 
+                    <button id="nav-button-login"><i class="fa-solid fa-right-to-bracket"></i></button>
+                    <button id="nav-button-langue"><i class="fa-solid fa-language"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>   
+    <div id="toggle-products">
+        <div class="flex-products">
+            <li><a href="#"><img class="image" src="PhotoAccueil/menu-MB.png" alt="Carte Mères"><br>Carte Mères</a></li>
+            <li><a href="#"><img class="image" src="PhotoAccueil/menu-GraphicsCard.png" alt="Carte Graphique"><br>Carte Graphique</a></li>
+            <li><a href="#"><img class="image" src="PhotoAccueil/menu-Monitors.png" alt="Gaming Monitor"><br>Gaming Monitor</a></li>
+            <li><a href="#"><img class="image" src="PhotoAccueil/menu-MiniPC.png" alt="Mini PC"><br>Mini PC</a></li>
+            <li><a href="#"><img class="image" src="PhotoAccueil/menu-IPC.png" alt="PCs Industriels"><br>PCs Industriels</a></li>
+            <li><a href="#"><img class="image" src="PhotoAccueil/menu-Server.png" alt="Serveurs / Station de Travail"><br>Serveurs / Station de Travail</a></li>
+        </div>
+    </div> 
+
+    <!-- Section remplaçant le carrousel -->
+    <div class="hero">
+        <img src="PhotoAccueil/7173876.jpg" alt="index-photo-asrock">
+        </div>
+        <main>
+            <main>
+                <div class="grid-container">
+                    <div class="grid-item grid-item-1 disabled large">
+                        <h2>M.2 SSD</h2>
+                    </div>
+                    <div class="grid-item grid-item-2 disabled extra-large">
+                        <h2>Motherboard</h2>
+                    </div>
+                    <div class="grid-item grid-item-3 disabled large">
+                        <h2>Graphics Card</h2>
+                    </div>
+                    <div class="grid-item grid-item-4 disabled">
+                        <h2>Server</h2>
+                    </div>
+                    <div class="grid-item grid-item-5 disabled">
+                        <h2>Industrial PC</h2>
+                    </div>
+                    <div class="grid-item grid-item-6 disabled">
+                        <h2>Gaming Router</h2>
+                    </div>
+                    <div class="grid-item grid-item-7 disabled">
+                        <h2>Power Supply</h2>
+                    </div>
+                </div>
+            </main>
+        </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Company Info</a></li>
+                    <li><a href="#">Investor</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>New</h3>
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Download</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Social Media</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ASRock Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <div id="login-popup" class="login-popup">
+        <div class="login-content">
+            <span class="close">&times;</span>
+            <div class="login-header">
+                <h2>Login</h2>
+                <a href="#" class="register-link">Register</a>
+            </div>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Enter</button>
+            </form>
+        </div>
+    </div>
+    <div id="register-popup" class="login-popup">
+        <div class="login-content">
+            <span class="close">&times;</span>
+            <div class="login-header">
+                <h2>Register</h2>
+            </div>
+            <form id="register-form">
+                <input type="email" id="register-email" placeholder="Email" required>
+                <input type="text" id="register-username" placeholder="Username" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+   <!-- HTML pour la pop-up Language -->
+    <div id="language-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Language</h2>
+            <input type="text" id="language-search" placeholder="Recherche ta langue">
+            <ul id="language-list">
+                <!-- Liste des langues qui seront filtrées dynamiquement -->
+                <li>Français</li>
+                <li>English</li>
+                <li>Español</li>
+                <li>Deutsch</li>
+                <li>Italiano</li>
+                <li>Português</li>
+                <li>中文</li>
+                <li>日本語</li>
+                <li>Русский</li>
+            </ul>
+        </div>
+    </div> 
+    <script src="script fonctionnel.js"></script>
+</body>
+</html>
