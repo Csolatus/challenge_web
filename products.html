@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASRock</title>
+    <link rel="stylesheet" href="styleproducts.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="#" class="logo" id="logo-asrock">ASROCK</a>
+                <button class="mobile-menu-button" aria-label="Open Menu">☰</button>
+                <div class="nav-links">
+                    <a href="#">PRODUCTS</a>
+                    <a href="#">GRAPHICS</a>
+                    <a href="#">NEW</a>
+                    <a href="#">SUPPORT</a>
+                    <a href="#">WHERE TO BUY</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <input type="text" class="search-bar" placeholder="Recherche...">
+                <button class="language">🌐</button>
+                <button class="account">👤</button>
+            </div>
+        </nav>
+    </header>
+    <!-- Section remplaçant le carrousel -->
+    <div class="hero">
+        <img src="index-photo-asrock.jpg" alt="index-photo-asrock">
+
+    <main>
+        <section class="product-carousel">
+            <div class="slide-container">
+                <div class="custom-slider fade">
+                    <div class="slide-index">1 / 3</div>
+                    <img class="slide-img" src="C:\Users\hakim\Desktop\element-pour-site-web\asrock-introduces-exciting-new-intel-b860-h810-motherboards-v0-7nbc4eqdiebe1.webp">
+                    <div class="slide-text">Slide 1</div>
+                </div>
+                <div class="custom-slider fade">
+                    <div class="slide-index">2 / 3</div>
+                    <img class="slide-img" src="C:\Users\hakim\Desktop\element-pour-site-web\asrock-a620i-lightning-wifi-banniere.webp">
+                    <div class="slide-text">Slide 2</div>
+                </div>
+                <div class="custom-slider fade">
+                    <div class="slide-index">3 / 3</div>
+                    <img class="slide-img" src="C:\Users\hakim\Desktop\element-pour-site-web\asrock-introduces-exciting-new-intel-b860-h810-motherboards-v0-vn1wztwgiebe1.webp">
+                    <div class="slide-text">Slide 3</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+        </section>
+        <section class="grid-container">
+            <div class="grid-item disabled large">
+                <h2>Nom du produit 1</h2>
+                <img class="grid-img" src="C:\Users\hakim\Desktop\element-pour-site-web\menu-MiniPC.png">
+            </div>
+            <div class="grid-item disabled large">
+                <h2>Nom du produit 2</h2>
+                <img class="grid-img" src="C:\Users\hakim\Desktop\element-pour-site-web\menu-Monitors.png">
+            </div> 
+            <div class="grid-item disabled large">
+                <h2>Nom du produit 3</h2>
+                <img class="grid-img" src="C:\Users\hakim\Desktop\element-pour-site-web\menu-GraphicsCard.png">
+            </div> 
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Company Info</a></li>
+                    <li><a href="#">Investor</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>New</h3>
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Download</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Social Media</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ASRock Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <div id="login-popup" class="login-popup">
+        <div class="login-content">
+            <span class="close">&times;</span>
+            <div class="login-header">
+                <h2>Login</h2>
+                <a href="#" class="register-link">Register</a>
+            </div>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Enter</button>
+            </form>
+        </div>
+    </div>
+    <div id="register-popup" class="login-popup">
+        <div class="login-content">
+            <span class="close">&times;</span>
+            <div class="login-header">
+                <h2>Register</h2>
+            </div>
+            <form id="register-form">
+                <input type="email" id="register-email" placeholder="Email" required>
+                <input type="text" id="register-username" placeholder="Username" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+   <!-- HTML pour la pop-up Language -->
+    <div id="language-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Language</h2>
+            <input type="text" id="language-search" placeholder="Recherche ta langue">
+            <ul id="language-list">
+                <!-- Liste des langues qui seront filtrées dynamiquement -->
+                <li>Français</li>
+                <li>English</li>
+                <li>Español</li>
+                <li>Deutsch</li>
+                <li>Italiano</li>
+                <li>Português</li>
+                <li>中文</li>
+                <li>日本語</li>
+                <li>Русский</li>
+            </ul>
+        </div>
+    </div>
+    <script type="module" src="support.js"></script>
+</body>
+</html>
